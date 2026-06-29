@@ -1,0 +1,191 @@
+.row {
+  margin-bottom: 3vw;
+  padding: 0 4%;
+}
+
+.row-title {
+  color: #e5e5e5;
+  font-size: max(1.4vw, 1.2rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.row-container {
+  position: relative;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  /* Improve scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-poster {
+  object-fit: cover;
+  width: 280px;
+  height: 160px;
+  margin-right: 10px;
+  border-radius: var(--border-radius);
+  transition: transform 450ms;
+  cursor: pointer;
+  /* Prevent blue tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover effects only apply on devices that support hover (not touchscreens) */
+@media (hover: hover) and (pointer: fine) {
+  .row-poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  .row-posters:hover .row-poster:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+.slider-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-container:hover .slider-btn {
+  opacity: 1;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.slider-btn.left {
+  left: -4%;
+}
+
+.slider-btn.right {
+  right: -4%;
+}
+
+@media (max-width: 768px) {
+  .row-poster {
+    width: 200px;
+    height: 112px;
+  }
+  .slider-btn {
+    display: none;
+  }
+}
+
+/* Modal Styles */
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Uses dynamic viewport height for mobile browsers with hiding address bars */
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  animation: fadeInModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  padding: 1rem;
+  /* Prevent scroll chaining to background */
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+.image-modal-overlay.closing {
+  animation: fadeOutModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.modal-close-btn {
+  position: absolute;
+  /* respect safe areas for notched devices like iPhones */
+  top: max(20px, env(safe-area-inset-top));
+  right: max(20px, env(safe-area-inset-right));
+  background: rgba(40, 40, 40, 0.8);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1000000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-close-btn:hover, .modal-close-btn:active {
+  transform: scale(1.1);
+  background: var(--primary-color);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 85vh;
+  max-height: 85dvh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+  animation: scaleInModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  /* Disable selection on image */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.image-modal-overlay.closing .modal-image {
+  animation: scaleOutModal 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Animations optimized for all devices */
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOutModal {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes scaleInModal {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes scaleOutModal {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.95); opacity: 0; }
+}

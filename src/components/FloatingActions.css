@@ -1,0 +1,55 @@
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: var(--transition);
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-btn {
+  right: 30px;
+  background-color: #25D366; /* Official WhatsApp green */
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+.call-btn {
+  left: 30px;
+  background-color: var(--primary-color);
+}
+
+.call-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.5); }
+  70%  { box-shadow: 0 0 0 12px rgba(229, 9, 20, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(229, 9, 20, 0); }
+}
+
+@media (max-width: 768px) {
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+  }
+  .whatsapp-btn {
+    right: 20px;
+  }
+  .call-btn {
+    left: 20px;
+  }
+}

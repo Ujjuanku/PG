@@ -1,0 +1,151 @@
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.google-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-alt);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--primary-color);
+}
+
+.rating-score {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-count {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.search-bar input {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  width: 300px;
+  font-family: inherit;
+  outline: none;
+  background-color: var(--input-bg);
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.search-bar input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+
+.reviews-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 120s linear infinite;
+  width: max-content;
+}
+
+.reviews-track.paused {
+  animation: none;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 1rem)); }
+}
+
+.review-card {
+  width: 350px;
+  background-color: var(--bg-alt);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  flex-shrink: 0;
+  border-top: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--border-color);
+  color: var(--text-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.reviewer-info h4 {
+  font-size: 1rem;
+  color: var(--text-main);
+  margin-bottom: 0.1rem;
+}
+
+.local-guide {
+  font-size: 0.75rem;
+  color: #ff9800;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.review-stars {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .reviews-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-bar input {
+    width: 100%;
+  }
+}
