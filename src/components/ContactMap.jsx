@@ -66,6 +66,7 @@ const ContactMap = () => {
             </a>
           </div>
 
+          <div id="book-visit" className="booking-anchor" aria-hidden="true"></div>
           <div className="contact-form-container">
             <h3 className="contact-heading">{t('contact.bookVisit')}</h3>
             <form className="contact-form" onSubmit={handleSubmit}>

@@ -54,7 +54,7 @@ const Hero = () => {
           {subtitle}
         </p>
         <div className="billboard-actions">
-          <a href="#pricing" className="btn btn-primary">
+          <a href="#book-visit" className="btn btn-primary">
             <Play size={24} fill="currentColor" /> {t('hero.bookNow')}
           </a>
           <a href="#facilities" className="btn btn-secondary">

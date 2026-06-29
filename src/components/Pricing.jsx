@@ -38,9 +38,9 @@ const Pricing = () => {
                   <li key={feature}><Check size={18} className="check-icon" /> {feature}</li>
                 ))}
               </ul>
-              <button className={`btn ${plan.popular ? 'btn-accent' : 'btn-outline-primary'}`}>
+              <a href="#book-visit" className={`btn ${plan.popular ? 'btn-accent' : 'btn-outline-primary'}`}>
                 {t('pricing.bookNow')}
-              </button>
+              </a>
             </div>
           ))}
         </div>

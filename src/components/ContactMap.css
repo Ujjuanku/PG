@@ -84,6 +84,10 @@
   box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
 }
 
+.booking-anchor {
+  scroll-margin-top: 88px;
+}
+
 .contact-form-container {
   background-color: var(--card-bg);
   padding: 3rem;
