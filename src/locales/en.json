@@ -73,8 +73,8 @@
       "Daily Room Cleaning",
       "All Premium Amenities"
     ],
-    "acElectricityNote": "AC room electricity is billed separately based on usage.",
-    "nonAcElectricityNote": "Non-AC rooms do not incur extra AC electricity charges."
+    "acElectricitySection": "AC rooms are priced as shown above, with electricity charges applied separately on top of the base rent.",
+    "acElectricityNote": "AC room electricity is billed separately based on usage."
   },
   "reviews": {
     "title": "What Our Family Says",

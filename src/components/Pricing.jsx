@@ -34,9 +34,11 @@ const Pricing = () => {
                   <li key={feature}><Check size={18} className="check-icon" /> {feature}</li>
                 ))}
               </ul>
-              <p className="pricing-note">
-                {t(plan.isAc ? 'pricing.acElectricityNote' : 'pricing.nonAcElectricityNote')}
-              </p>
+              {plan.isAc && (
+                <p className="pricing-note">
+                  {t('pricing.acElectricityNote')}
+                </p>
+              )}
               <a href="#book-visit" className={`btn ${plan.popular ? 'btn-accent' : 'btn-outline-primary'}`}>
                 {t('pricing.bookNow')}
               </a>

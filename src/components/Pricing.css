@@ -101,6 +101,14 @@
   font-size: 0.95rem;
 }
 
+.pricing-description {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  margin-top: 0.75rem;
+  max-width: 760px;
+  line-height: 1.7;
+}
+
 .pricing-note {
   color: var(--text-muted);
   font-size: 0.92rem;

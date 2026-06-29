@@ -73,8 +73,8 @@
       "రోజువారీ room cleaning",
       "అన్ని premium amenities"
     ],
-    "acElectricityNote": "AC గదుల కోసం విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా వస్తుంది.",
-    "nonAcElectricityNote": "Non-AC గదులకు అదనపు AC విద్యుత్ చార్జీలు వర్తించవు."
+    "acElectricitySection": "AC గదుల ధర పైన చూపించబడిన విధంగా ఉంటుంది, మరియు విద్యుత్ ఛార్జీలు బేస్ రెంట్‌ పై వేరుగా వర్తిస్తాయి.",
+    "acElectricityNote": "AC గదుల కోసం విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా వస్తుంది."
   },
   "reviews": {
     "title": "మా family ఏమంటోంది",
