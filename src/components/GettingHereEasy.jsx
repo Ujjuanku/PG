@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowUpRight, Bike, MapPinned, MessageCircle, Phone } from 'lucide-react';
 
@@ -49,6 +50,27 @@ const itemVariants = {
 
 export default function GettingHereEasy() {
   const { t } = useTranslation();
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(hover: none), (pointer: coarse)');
+    const handleChange = (event) => setIsTouch(event.matches);
+    setIsTouch(mq.matches);
+
+    if (mq.addEventListener) {
+      mq.addEventListener('change', handleChange);
+    } else {
+      mq.addListener(handleChange);
+    }
+
+    return () => {
+      if (mq.removeEventListener) {
+        mq.removeEventListener('change', handleChange);
+      } else {
+        mq.removeListener(handleChange);
+      }
+    };
+  }, []);
 
   return (
     <motion.section
@@ -277,12 +299,29 @@ export default function GettingHereEasy() {
             padding: 4.35rem 4%;
           }
 
+          .getting-easy-section::after {
+            display: none;
+          }
+
           .getting-easy-grid {
             grid-template-columns: 1fr;
           }
 
           .getting-easy-card {
             min-height: 11.75rem;
+            border-color: rgba(201, 168, 76, 0.18);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+          }
+
+          .getting-easy-card::before {
+            display: none;
+          }
+
+          .getting-easy-icon {
+            box-shadow: none;
           }
         }
 
@@ -322,8 +361,8 @@ export default function GettingHereEasy() {
                 rel={isPhone ? undefined : 'noopener noreferrer'}
                 target={isPhone ? undefined : '_blank'}
                 variants={itemVariants}
-                whileHover={{ y: -9, scale: 1.01 }}
-                whileTap={{ scale: 0.985 }}
+                whileHover={!isTouch ? { y: -9, scale: 1.01 } : undefined}
+                whileTap={!isTouch ? { scale: 0.985 } : undefined}
                 transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
                 style={{ '--easy-accent': action.accent }}
                 aria-label={`${label} for MR Grand Men's Stay PG`}
