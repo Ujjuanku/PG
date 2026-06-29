@@ -65,7 +65,7 @@
     "popular": "అత్యంత ప్రజాదరణ",
     "perMonth": "/నెల",
     "bookNow": "ఇప్పుడే బుక్ చేయండి",
-    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "plans": ["4 Sharing", "3 Sharing", "2 Sharing", "Single Room"],
     "badges": ["AC అందుబాటులో ఉంది", "Non-AC అందుబాటులో ఉంది", "AC అందుబాటులో ఉంది", "AC అందుబాటులో ఉంది"],
     "features": [
       "Individual High Speed WiFi",
@@ -73,7 +73,7 @@
       "రోజువారీ room cleaning",
       "అన్ని premium amenities"
     ],
-    "acElectricitySection": "AC గదుల ధర పైన చూపించబడిన విధంగా ఉంటుంది, మరియు విద్యుత్ ఛార్జీలు బేస్ రెంట్‌ పై వేరుగా వర్తిస్తాయి.",
+    "acElectricitySection": "AC గదుల ధర పైన చూపించబడినట్లేయే ఉంటుంది; విద్యुत్ ఛార్జీలు బేస్ రెంట్‌పై వేరుగా జోడిస్తారు.",
     "acElectricityNote": "AC గదుల కోసం విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా వస్తుంది."
   },
   "reviews": {

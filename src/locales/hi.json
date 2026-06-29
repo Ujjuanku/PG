@@ -65,7 +65,7 @@
     "popular": "सबसे लोकप्रिय",
     "perMonth": "/माह",
     "bookNow": "अभी बुक करें",
-    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "plans": ["4 Sharing", "3 Sharing", "2 Sharing", "Single Room"],
     "badges": ["AC उपलब्ध", "Non-AC उपलब्ध", "AC उपलब्ध", "AC उपलब्ध"],
     "features": [
       "अलग हाई स्पीड WiFi",
@@ -73,7 +73,7 @@
       "रोज कमरे की सफाई",
       "सभी प्रीमियम सुविधाएं"
     ],
-    "acElectricitySection": "AC कमरे की कीमत ऊपर दिखाई गई है, बिजली का शुल्क बेस किराए के ऊपर अलग से लगेगा।",
+    "acElectricitySection": "AC कमरे की कीमत ऊपर दिखाई गई है; बिजली का शुल्क बेस किराए के ऊपर अलग से जोड़ा जाएगा।",
     "acElectricityNote": "AC कमरे के लिए बिजली का बिल उपयोग के अनुसार अलग से लगेगा।"
   },
   "reviews": {

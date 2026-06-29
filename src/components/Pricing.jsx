@@ -1,12 +1,12 @@
 import './Pricing.css';
-import { Check } from 'lucide-react';
+import { Check, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const pricingData = [
-  { price: '9,500', popular: false, isAc: true },
-  { price: '10,500', popular: true, isAc: false },
-  { price: '13,500', popular: false, isAc: true },
-  { price: '24,000', popular: false, isAc: true }
+  { price: '9,500', popular: false },
+  { price: '10,500', popular: true },
+  { price: '13,500', popular: false },
+  { price: '24,000', popular: false }
 ];
 
 const Pricing = () => {
@@ -18,7 +18,10 @@ const Pricing = () => {
     <section className="section bg-alt" id="pricing">
       <div className="container">
         <h2 className="section-title">{t('pricing.title')}</h2>
-        
+        <div className="pricing-alert">
+          <Star size={18} />
+          <span>{t('pricing.acElectricitySection')}</span>
+        </div>
         <div className="pricing-grid">
           {pricingData.map((plan, index) => (
             <div className={`pricing-card ${plan.popular ? 'popular' : ''}`} key={index}>
@@ -34,11 +37,6 @@ const Pricing = () => {
                   <li key={feature}><Check size={18} className="check-icon" /> {feature}</li>
                 ))}
               </ul>
-              {plan.isAc && (
-                <p className="pricing-note">
-                  {t('pricing.acElectricityNote')}
-                </p>
-              )}
               <a href="#book-visit" className={`btn ${plan.popular ? 'btn-accent' : 'btn-outline-primary'}`}>
                 {t('pricing.bookNow')}
               </a>

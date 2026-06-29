@@ -65,7 +65,7 @@
     "popular": "Most Popular",
     "perMonth": "/mo",
     "bookNow": "Book Now",
-    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "plans": ["4 Sharing", "3 Sharing", "2 Sharing", "Single Room"],
     "badges": ["AC Available", "Non-AC Available", "AC Available", "AC Available"],
     "features": [
       "Individual High Speed WiFi",
@@ -73,7 +73,7 @@
       "Daily Room Cleaning",
       "All Premium Amenities"
     ],
-    "acElectricitySection": "AC rooms are priced as shown above, with electricity charges applied separately on top of the base rent.",
+    "acElectricitySection": "AC rooms are priced as shown above; electricity charges are added on top of the base rent.",
     "acElectricityNote": "AC room electricity is billed separately based on usage."
   },
   "reviews": {

@@ -101,12 +101,21 @@
   font-size: 0.95rem;
 }
 
-.pricing-description {
-  color: var(--text-muted);
-  font-size: 0.98rem;
-  margin-top: 0.75rem;
-  max-width: 760px;
-  line-height: 1.7;
+.pricing-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(229, 9, 20, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.18);
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+.pricing-alert svg {
+  color: var(--primary-color);
 }
 
 .pricing-note {
