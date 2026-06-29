@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "facilities": "Facilities",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "language": "Language",
+    "themeToggle": "Toggle Day/Night Mode",
+    "search": "Search",
+    "notifications": "Notifications"
+  },
+  "rows": {
+    "trending": "Trending Now",
+    "premiumRooms": "Premium Rooms",
+    "gallery": "Gallery & Community",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right",
+    "closeImage": "Close image",
+    "expandedView": "Expanded view",
+    "imageAlt": "{{title}} image {{number}}"
+  },
+  "hero": {
+    "alt": "MR Grand PG",
+    "title": "MR GRAND<br/>MEN'S STAY",
+    "synopsis": "Experience premium living in the heart of Hyderabad with premium facilities, quality food and a vibrant community.",
+    "bookNow": "Book Now",
+    "moreInfo": "More Info",
+    "rotatingSubtitles": [
+      "Experience premium living in the heart of Hyderabad with premium facilities, quality food and a vibrant community.",
+      "हैदराबाद के दिल में प्रीमियम सुविधाओं, गुणवत्तापूर्ण भोजन और एक जीवंत समुदाय के साथ प्रीमियम जीवन का अनुभव करें।",
+      "అత్యుత్తమ సౌకర్యాలు, నాణ్యమైన ఆహారం మరియు స్నేహపూర్వక సమాజంతో హైదరాబాద్ హృదయంలో ప్రీమియం జీవనాన్ని అనుభవించండి."
+    ]
+  },
+  "about": {
+    "title": "Who We Are",
+    "description1": "Welcome to <strong>MR Grand Men's Stay PG</strong>, a premium living space in the heart of Hyderabad. Located at Prashanth Hills, Raidurgam, we are just a walkable distance from major IT firms.",
+    "description2": "Our motto is <em>\"Finding Family in Hostel\"</em>. We believe that a PG should be more than just a room; it should be a place where you feel at home, safe, and part of a community.",
+    "amenities": "Premium Amenities",
+    "management": "Friendly Management",
+    "safety": "Safe & Secure",
+    "imageAlt": "PG Building"
+  },
+  "facilities": {
+    "title": "Premium Facilities",
+    "acBadge": "AC Available",
+    "nonAcBadge": "Non-AC Available",
+    "items": [
+      { "title": "High Speed WiFi", "desc": "Individual connection for every room" },
+      { "title": "Quality Food", "desc": "Everyday Egg & Milk, high protein, hygienic" },
+      { "title": "Daily Cleaning", "desc": "Rooms cleaned perfectly every day" },
+      { "title": "Cupboards", "desc": "Individual spacious cupboards" },
+      { "title": "Well Ventilated", "desc": "Fresh air and ample natural light" },
+      { "title": "New Building", "desc": "All brand new facilities and furniture" },
+      { "title": "Washing Machine", "desc": "Laundry made easy with modern machines" },
+      { "title": "Fridge & Water", "desc": "Refrigerator & dispenser on each floor" },
+      { "title": "Prime Location", "desc": "Walkable distance to major IT firms" },
+      { "title": "Spacious Parking", "desc": "Ample parking space for your vehicles" },
+      { "title": "AC Rooms Available", "desc": "Premium AC rooms available for added comfort" },
+      { "title": "Non-AC Rooms Available", "desc": "Comfortable Non-AC rooms available for value-focused stays" }
+    ]
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "popular": "Most Popular",
+    "perMonth": "/mo",
+    "bookNow": "Book Now",
+    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "badges": ["AC Available", "Non-AC Available", "AC Available", "AC Available"],
+    "features": [
+      "Individual High Speed WiFi",
+      "Everyday Egg & Milk",
+      "Daily Room Cleaning",
+      "All Premium Amenities"
+    ]
+  },
+  "reviews": {
+    "title": "What Our Family Says",
+    "basedOn": "Based on 61 Google Reviews",
+    "searchPlaceholder": "Search reviews (e.g. food, wifi, clean)",
+    "localGuide": "Local Guide",
+    "noMatch": "No reviews match your search.",
+    "items": [
+      "I am staying in this PG from past 1 year. The area is peaceful and friendly environment. The owners are like a family...",
+      "I had an amazing experience at this hostel. The staff were incredibly friendly and always ready to help...",
+      "This PG owners are also providing catering services... Their food is very tasty and price is also reasonable.",
+      "Food is nice and they are providing 24/7 electricity. The main thing is that they are not using palm oil in vegetables.",
+      "Nice place to stay, good ventilation and proper maintenance. Food is really good. Management is very good...",
+      "This PG is very good and hygienic food provided at affordable price...",
+      "Nice PG and good food. They clean the rooms on daily basis without fail and very hygienic.",
+      "Hygienic tasty food, best for employees, friendly management.",
+      "Good place & food. Owners are very friendly. I recommend this PG to IT professionals since this is very near to all IT companies.",
+      "Good PG to stay. PG owner Mr Srinu Chowdhury is a good and responsible person. Listens to complaints and gets them fixed.",
+      "Good room, services are good. The most important thing is food.",
+      "The MR Grand PG hostel is an excellent place to stay. Offering delicious food and a comfortable environment..."
+    ]
+  },
+  "location": {
+    "badge": "Located in Hyderabad's Prime IT Corridor",
+    "kicker": "MR Grand PG, Khajaguda X-Roads",
+    "title": "Minutes Away From Everything That Matters",
+    "subtitle": "Live closer to work, reduce commute stress, and enjoy the best of Hyderabad's tech corridor.",
+    "saved": "1-2 Hours",
+    "savedLabel": "Daily Time Saved",
+    "commuteTitle": "Trade traffic for time that is actually yours.",
+    "commuteCopy": "Stay near Mindspace, HITEC City, Financial District, and Raidurg Metro so weekday commutes feel shorter and evenings start sooner.",
+    "trust": ["Near Mindspace", "Near Hitech City", "Near Financial District", "Near Raidurg Metro"],
+    "categories": {
+      "it": { "label": "IT Companies", "eyebrow": "Work closer" },
+      "transport": { "label": "Transport", "eyebrow": "Move faster" },
+      "lifestyle": { "label": "Lifestyle", "eyebrow": "After hours" },
+      "healthcare": { "label": "Healthcare", "eyebrow": "Care nearby" },
+      "spiritual": { "label": "Spiritual Places", "eyebrow": "Quiet moments" }
+    },
+    "note": "*Distances and travel times are approximate and may vary depending on traffic conditions.*"
+  },
+  "gettingHere": {
+    "kicker": "MR GRAND Men's Stay PG",
+    "title": "Getting Here Is Easy",
+    "subtitle": "Coming for a room visit? Reach MR Grand PG in just a few taps.",
+    "actions": {
+      "maps": { "label": "Open in Google Maps", "description": "Navigate directly to MR Grand Men's Stay PG." },
+      "rapido": { "label": "Book Rapido", "description": "Grab a quick bike taxi for your room visit." },
+      "call": { "label": "Call Owner", "description": "Speak directly before you start." },
+      "whatsapp": { "label": "WhatsApp Owner", "description": "Message and schedule your visit today." }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "visit": "Visit Us",
+    "desc": "Ready to find your new family? Drop by for a visit or reach out to us!",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "mapTitle": "MR Grand Men's Stay PG Location",
+    "directions": "Get Directions on Google Maps",
+    "bookVisit": "Book a Visit",
+    "fullName": "Full Name",
+    "namePlaceholder": "John Doe",
+    "phoneNumber": "Phone Number",
+    "preferredSharing": "Preferred Sharing",
+    "selectOption": "Select an option...",
+    "message": "Message (Optional)",
+    "messagePlaceholder": "Any specific requirements?",
+    "sendRequest": "Send Request",
+    "alert": "Thank you for your interest! We will contact you soon."
+  },
+  "floating": {
+    "whatsapp": "WhatsApp Us",
+    "call": "Call Us"
+  }
+}

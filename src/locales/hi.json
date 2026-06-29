@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "होम",
+    "rooms": "कमरे",
+    "facilities": "सुविधाएं",
+    "pricing": "कीमतें",
+    "contact": "संपर्क",
+    "language": "भाषा",
+    "themeToggle": "डे/नाइट मोड बदलें",
+    "search": "खोजें",
+    "notifications": "सूचनाएं"
+  },
+  "rows": {
+    "trending": "अभी लोकप्रिय",
+    "premiumRooms": "प्रीमियम कमरे",
+    "gallery": "गैलरी और कम्युनिटी",
+    "scrollLeft": "बाएं स्क्रॉल करें",
+    "scrollRight": "दाएं स्क्रॉल करें",
+    "closeImage": "चित्र बंद करें",
+    "expandedView": "बड़ा दृश्य",
+    "imageAlt": "{{title}} चित्र {{number}}"
+  },
+  "hero": {
+    "alt": "MR Grand PG",
+    "title": "MR GRAND<br/>MEN'S STAY",
+    "synopsis": "हैदराबाद के दिल में प्रीमियम सुविधाओं, गुणवत्तापूर्ण भोजन और एक जीवंत समुदाय के साथ प्रीमियम जीवन का अनुभव करें।",
+    "bookNow": "अभी बुक करें",
+    "moreInfo": "और जानकारी",
+    "rotatingSubtitles": [
+      "Experience premium living in the heart of Hyderabad with premium facilities, quality food and a vibrant community.",
+      "हैदराबाद के दिल में प्रीमियम सुविधाओं, गुणवत्तापूर्ण भोजन और एक जीवंत समुदाय के साथ प्रीमियम जीवन का अनुभव करें।",
+      "అత్యుత్తమ సౌకర్యాలు, నాణ్యమైన ఆహారం మరియు స్నేహపూర్వక సమాజంతో హైదరాబాద్ హృదయంలో ప్రీమియం జీవనాన్ని అనుభవించండి."
+    ]
+  },
+  "about": {
+    "title": "हम कौन हैं",
+    "description1": "स्वागत है <strong>MR Grand Men's Stay PG</strong> में, हैदराबाद के दिल में एक प्रीमियम रहने की जगह। Prashanth Hills, Raidurgam में स्थित, हम प्रमुख IT कंपनियों से पैदल पहुंच की दूरी पर हैं।",
+    "description2": "हमारा motto है <em>\"Finding Family in Hostel\"</em>. हमारा विश्वास है कि PG सिर्फ एक कमरा नहीं, बल्कि ऐसी जगह होनी चाहिए जहां आप घर जैसा, सुरक्षित और कम्युनिटी का हिस्सा महसूस करें।",
+    "amenities": "प्रीमियम सुविधाएं",
+    "management": "मित्रवत मैनेजमेंट",
+    "safety": "सुरक्षित और संरक्षित",
+    "imageAlt": "PG बिल्डिंग"
+  },
+  "facilities": {
+    "title": "प्रीमियम सुविधाएं",
+    "acBadge": "AC उपलब्ध",
+    "nonAcBadge": "Non-AC उपलब्ध",
+    "items": [
+      { "title": "हाई स्पीड WiFi", "desc": "हर कमरे के लिए अलग कनेक्शन" },
+      { "title": "क्वालिटी फूड", "desc": "रोज Egg & Milk, हाई प्रोटीन, हाइजीनिक" },
+      { "title": "रोज सफाई", "desc": "कमरों की हर दिन बेहतरीन सफाई" },
+      { "title": "कपबोर्ड्स", "desc": "अलग-अलग बड़े कपबोर्ड्स" },
+      { "title": "अच्छा वेंटिलेशन", "desc": "ताजा हवा और भरपूर प्राकृतिक रोशनी" },
+      { "title": "नई बिल्डिंग", "desc": "सभी सुविधाएं और फर्नीचर बिल्कुल नए" },
+      { "title": "वॉशिंग मशीन", "desc": "मॉडर्न मशीनों से आसान लॉन्ड्री" },
+      { "title": "फ्रिज और पानी", "desc": "हर फ्लोर पर रेफ्रिजरेटर और डिस्पेंसर" },
+      { "title": "प्राइम लोकेशन", "desc": "बड़ी IT कंपनियों से पैदल दूरी" },
+      { "title": "बड़ी पार्किंग", "desc": "आपके वाहनों के लिए पर्याप्त पार्किंग" },
+      { "title": "AC Rooms Available", "desc": "अधिक आराम के लिए premium AC rooms उपलब्ध हैं" },
+      { "title": "Non-AC Rooms Available", "desc": "Value-focused stay के लिए comfortable Non-AC rooms उपलब्ध हैं" }
+    ]
+  },
+  "pricing": {
+    "title": "स्पष्ट कीमतें",
+    "popular": "सबसे लोकप्रिय",
+    "perMonth": "/माह",
+    "bookNow": "अभी बुक करें",
+    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "badges": ["AC उपलब्ध", "Non-AC उपलब्ध", "AC उपलब्ध", "AC उपलब्ध"],
+    "features": [
+      "अलग हाई स्पीड WiFi",
+      "रोज Egg & Milk",
+      "रोज कमरे की सफाई",
+      "सभी प्रीमियम सुविधाएं"
+    ]
+  },
+  "reviews": {
+    "title": "हमारी फैमिली क्या कहती है",
+    "basedOn": "61 Google Reviews पर आधारित",
+    "searchPlaceholder": "रिव्यू खोजें (जैसे food, wifi, clean)",
+    "localGuide": "लोकल गाइड",
+    "noMatch": "आपकी खोज से कोई रिव्यू नहीं मिला।",
+    "items": [
+      "मैं पिछले 1 साल से इस PG में रह रहा हूं। इलाका शांत है और माहौल दोस्ताना है। मालिक परिवार जैसे हैं...",
+      "इस हॉस्टल में मेरा अनुभव शानदार रहा। स्टाफ बहुत दोस्ताना था और हमेशा मदद के लिए तैयार था...",
+      "इस PG के मालिक catering services भी देते हैं... खाना बहुत tasty है और price भी reasonable है।",
+      "खाना अच्छा है और 24/7 electricity मिलती है। खास बात यह है कि वे सब्जियों में palm oil इस्तेमाल नहीं करते।",
+      "रहने के लिए अच्छी जगह, अच्छा ventilation और सही maintenance। खाना सच में अच्छा है। Management बहुत अच्छा है...",
+      "यह PG बहुत अच्छा है और affordable price पर hygienic food मिलता है...",
+      "अच्छा PG और अच्छा खाना। वे रोज बिना fail rooms clean करते हैं और hygiene अच्छा है।",
+      "Hygienic tasty food, employees के लिए best, friendly management.",
+      "अच्छी जगह और खाना। Owners बहुत friendly हैं। IT professionals को recommend करता हूं क्योंकि यह IT companies के बहुत पास है।",
+      "रहने के लिए अच्छा PG. PG owner Mr Srinu Chowdhury अच्छे और responsible हैं। Complaints सुनते हैं और fix कराते हैं।",
+      "कमरा अच्छा है, services अच्छी हैं। सबसे important चीज food है।",
+      "MR Grand PG hostel रहने के लिए excellent जगह है। Delicious food और comfortable environment मिलता है..."
+    ]
+  },
+  "location": {
+    "badge": "Hyderabad के Prime IT Corridor में स्थित",
+    "kicker": "MR Grand PG, Khajaguda X-Roads",
+    "title": "हर जरूरी जगह से बस कुछ मिनट दूर",
+    "subtitle": "काम के पास रहें, commute stress कम करें और Hyderabad के tech corridor का best enjoy करें.",
+    "saved": "1-2 घंटे",
+    "savedLabel": "रोज समय की बचत",
+    "commuteTitle": "Traffic की जगह अपना समय वापस पाएं.",
+    "commuteCopy": "Mindspace, HITEC City, Financial District और Raidurg Metro के पास रहें ताकि weekdays का commute छोटा लगे और evenings जल्दी शुरू हों.",
+    "trust": ["Mindspace के पास", "Hitech City के पास", "Financial District के पास", "Raidurg Metro के पास"],
+    "categories": {
+      "it": { "label": "IT Companies", "eyebrow": "काम के पास" },
+      "transport": { "label": "Transport", "eyebrow": "तेज आवाजाही" },
+      "lifestyle": { "label": "Lifestyle", "eyebrow": "काम के बाद" },
+      "healthcare": { "label": "Healthcare", "eyebrow": "Care nearby" },
+      "spiritual": { "label": "Spiritual Places", "eyebrow": "शांत पल" }
+    },
+    "note": "*Distances और travel times approximate हैं और traffic conditions के अनुसार बदल सकते हैं.*"
+  },
+  "gettingHere": {
+    "kicker": "MR GRAND Men's Stay PG",
+    "title": "यहां पहुंचना आसान है",
+    "subtitle": "Room visit के लिए आ रहे हैं? कुछ taps में MR Grand PG पहुंचें.",
+    "actions": {
+      "maps": { "label": "Google Maps में खोलें", "description": "सीधे MR Grand Men's Stay PG तक navigate करें." },
+      "rapido": { "label": "Rapido बुक करें", "description": "Room visit के लिए quick bike taxi लें." },
+      "call": { "label": "Owner को कॉल करें", "description": "निकलने से पहले सीधे बात करें." },
+      "whatsapp": { "label": "Owner को WhatsApp करें", "description": "आज की visit schedule करने के लिए message करें." }
+    }
+  },
+  "contact": {
+    "title": "संपर्क करें",
+    "visit": "हमसे मिलें",
+    "desc": "अपनी नई family ढूंढने के लिए तैयार हैं? Visit करें या हमसे बात करें!",
+    "address": "पता",
+    "phone": "फोन",
+    "email": "ईमेल",
+    "mapTitle": "MR Grand Men's Stay PG Location",
+    "directions": "Google Maps पर directions लें",
+    "bookVisit": "Visit बुक करें",
+    "fullName": "पूरा नाम",
+    "namePlaceholder": "John Doe",
+    "phoneNumber": "फोन नंबर",
+    "preferredSharing": "पसंदीदा शेयरिंग",
+    "selectOption": "एक विकल्प चुनें...",
+    "message": "Message (Optional)",
+    "messagePlaceholder": "कोई खास requirement?",
+    "sendRequest": "Request भेजें",
+    "alert": "आपकी रुचि के लिए धन्यवाद! हम जल्द आपसे संपर्क करेंगे।"
+  },
+  "floating": {
+    "whatsapp": "WhatsApp करें",
+    "call": "कॉल करें"
+  }
+}

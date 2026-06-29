@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import './Row.css';
 
 const Row = ({ title, images }) => {
+  const { t } = useTranslation();
   const rowRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
@@ -47,7 +49,7 @@ const Row = ({ title, images }) => {
     <div className="row" id="rooms">
       <h2 className="row-title">{title}</h2>
       <div className="row-container">
-        <button className="slider-btn left" onClick={() => handleScroll('left')} aria-label="Scroll left">
+        <button className="slider-btn left" onClick={() => handleScroll('left')} aria-label={t('rows.scrollLeft')}>
           <ChevronLeft size={40} />
         </button>
         
@@ -57,14 +59,14 @@ const Row = ({ title, images }) => {
               key={index}
               className="row-poster"
               src={img} 
-              alt={`${title} image ${index + 1}`}
+              alt={t('rows.imageAlt', { title, number: index + 1 })}
               onClick={() => openModal(img)}
               loading="lazy"
             />
           ))}
         </div>
 
-        <button className="slider-btn right" onClick={() => handleScroll('right')} aria-label="Scroll right">
+        <button className="slider-btn right" onClick={() => handleScroll('right')} aria-label={t('rows.scrollRight')}>
           <ChevronRight size={40} />
         </button>
       </div>
@@ -78,14 +80,14 @@ const Row = ({ title, images }) => {
           <button 
             className="modal-close-btn" 
             onClick={closeModal} 
-            aria-label="Close image"
+            aria-label={t('rows.closeImage')}
           >
             <X size={28} />
           </button>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img 
               src={selectedImage} 
-              alt="Expanded view" 
+              alt={t('rows.expandedView')} 
               className="modal-image" 
             />
           </div>

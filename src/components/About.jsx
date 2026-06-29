@@ -1,31 +1,34 @@
 import './About.css';
+import { Trans, useTranslation } from 'react-i18next';
 import { Home, Users, Shield } from 'lucide-react';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section bg-alt" id="about">
       <div className="container about-container">
         <div className="about-content">
-          <h2 className="section-title" style={{ textAlign: 'left', margin: '0 0 2rem 0' }}>Who We Are</h2>
+          <h2 className="section-title" style={{ textAlign: 'left', margin: '0 0 2rem 0' }}>{t('about.title')}</h2>
           <p className="about-description">
-            Welcome to <strong>MR Grand Men's Stay PG</strong>, a premium living space in the heart of Hyderabad. Located at Prashanth Hills, Raidurgam, we are just a walkable distance from major IT firms. 
+            <Trans i18nKey="about.description1" components={{ strong: <strong /> }} />
           </p>
           <p className="about-description">
-            Our motto is <em>"Finding Family in Hostel"</em>. We believe that a PG should be more than just a room; it should be a place where you feel at home, safe, and part of a community.
+            <Trans i18nKey="about.description2" components={{ em: <em /> }} />
           </p>
           
           <div className="about-features">
             <div className="feature-item">
               <Home className="feature-icon" />
-              <span>Premium Amenities</span>
+              <span>{t('about.amenities')}</span>
             </div>
             <div className="feature-item">
               <Users className="feature-icon" />
-              <span>Friendly Management</span>
+              <span>{t('about.management')}</span>
             </div>
             <div className="feature-item">
               <Shield className="feature-icon" />
-              <span>Safe & Secure</span>
+              <span>{t('about.safety')}</span>
             </div>
           </div>
         </div>
@@ -34,7 +37,7 @@ const About = () => {
           <div className="geometric-shape shape-1"></div>
           <div className="geometric-shape shape-2"></div>
           <div className="image-wrapper">
-            <img src="/assets/unnamed2.jpg" alt="PG Building" className="about-image" />
+            <img src="/assets/unnamed2.jpg" alt={t('about.imageAlt')} className="about-image" />
           </div>
         </div>
       </div>

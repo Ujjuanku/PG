@@ -72,6 +72,17 @@
   margin-bottom: 2rem;
   line-height: 1.5;
   color: var(--text-main);
+  transition: opacity 0.36s ease, transform 0.36s ease;
+}
+
+.billboard-synopsis.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.billboard-synopsis.hidden {
+  opacity: 0;
+  transform: translateY(6px);
 }
 
 .billboard-actions {

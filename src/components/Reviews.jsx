@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Reviews.css';
 import { Star, ShieldCheck } from 'lucide-react';
 
@@ -42,9 +43,15 @@ const reviewsData = [
 ];
 
 const Reviews = () => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredReviews = reviewsData.filter(review => 
+  const translatedReviews = reviewsData.map((review, index) => ({
+    ...review,
+    text: t(`reviews.items.${index}`, { defaultValue: review.text }),
+  }));
+
+  const filteredReviews = translatedReviews.filter(review => 
     review.text.toLowerCase().includes(searchTerm.toLowerCase()) || 
     review.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -52,7 +59,7 @@ const Reviews = () => {
   return (
     <section className="section" id="reviews">
       <div className="container">
-        <h2 className="section-title">What Our Family Says</h2>
+        <h2 className="section-title">{t('reviews.title')}</h2>
         
         <div className="reviews-header">
           <div className="google-rating">
@@ -60,13 +67,13 @@ const Reviews = () => {
             <div className="rating-stars">
               {[...Array(5)].map((_, i) => <Star key={i} size={20} fill="#E8952A" color="#E8952A" />)}
             </div>
-            <div className="rating-count">Based on 61 Google Reviews</div>
+            <div className="rating-count">{t('reviews.basedOn')}</div>
           </div>
           
           <div className="search-bar">
             <input 
               type="text" 
-              placeholder="Search reviews (e.g. food, wifi, clean)" 
+              placeholder={t('reviews.searchPlaceholder')} 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -75,13 +82,13 @@ const Reviews = () => {
 
         <div className="reviews-carousel-wrapper">
           <div className={`reviews-track ${searchTerm ? 'paused' : ''}`}>
-            {(searchTerm ? filteredReviews : [...reviewsData, ...reviewsData]).map((review, idx) => (
+            {(searchTerm ? filteredReviews : [...translatedReviews, ...translatedReviews]).map((review, idx) => (
               <div className="review-card" key={idx}>
                 <div className="review-header">
                   <div className="avatar">{review.name.charAt(0)}</div>
                   <div className="reviewer-info">
                     <h4>{review.name}</h4>
-                    {review.isLocalGuide && <span className="local-guide"><ShieldCheck size={14} /> Local Guide</span>}
+                    {review.isLocalGuide && <span className="local-guide"><ShieldCheck size={14} /> {t('reviews.localGuide')}</span>}
                   </div>
                 </div>
                 <div className="review-stars">
@@ -93,7 +100,7 @@ const Reviews = () => {
             
             {searchTerm && filteredReviews.length === 0 && (
               <p style={{ textAlign: 'center', width: '100%', color: 'var(--text-muted)' }}>
-                No reviews match your search.
+                {t('reviews.noMatch')}
               </p>
             )}
           </div>

@@ -5,10 +5,15 @@ import Facilities from './components/Facilities'
 import Pricing from './components/Pricing'
 import Reviews from './components/Reviews'
 import ContactMap from './components/ContactMap'
+import LocationAdvantage from './components/LocationAdvantage'
+import GettingHereEasy from './components/GettingHereEasy'
 import FloatingActions from './components/FloatingActions'
+import { useTranslation } from 'react-i18next'
 import './index.css'
 
 function App() {
+  const { t } = useTranslation()
+
   const allImages = [
     'unnamed.jpg', 'unnamed1.jpg', 'unnamed2.jpg', 'unnamed3.jpg', 
     'unnamed4.jpg', 'unnamed5.jpg', 'unnamed6.jpg', 'unnamed7.jpg', 
@@ -25,13 +30,15 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Row title="Trending Now" images={trending} />
-      <Row title="Premium Rooms" images={premiumRooms} />
-      <Row title="Gallery & Community" images={gallery} />
+      <Row title={t('rows.trending')} images={trending} />
+      <Row title={t('rows.premiumRooms')} images={premiumRooms} />
+      <Row title={t('rows.gallery')} images={gallery} />
       
       <Facilities />
       <Pricing />
       <Reviews />
+      <LocationAdvantage />
+      <GettingHereEasy />
       <ContactMap />
       <FloatingActions />
     </>

@@ -1,8 +1,16 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 import { Search, Bell, Sun, Moon } from 'lucide-react';
 
+const languages = [
+  { code: 'en', label: 'EN' },
+  { code: 'hi', label: 'हिंदी' },
+  { code: 'te', label: 'తెలుగు' },
+];
+
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [theme, setTheme] = useState('dark');
 
@@ -33,30 +41,47 @@ const Header = () => {
     localStorage.setItem('theme', newTheme);
   };
 
+  const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-left">
         <div className="logo">MR GRAND</div>
         <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#rooms">Rooms</a>
-          <a href="#facilities">Facilities</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
+          <a href="#home">{t('nav.home')}</a>
+          <a href="#rooms">{t('nav.rooms')}</a>
+          <a href="#facilities">{t('nav.facilities')}</a>
+          <a href="#pricing">{t('nav.pricing')}</a>
+          <a href="#contact">{t('nav.contact')}</a>
         </nav>
       </div>
       
       <div className="header-right">
-        <Search size={20} className="header-icon" />
+        <Search size={20} className="header-icon" aria-label={t('nav.search')} />
         
         {/* Animated Theme Toggle */}
-        <div className="theme-toggle" onClick={toggleTheme} title="Toggle Day/Night Mode" role="switch" aria-checked={theme === 'light'}>
+        <div className="theme-toggle" onClick={toggleTheme} title={t('nav.themeToggle')} role="switch" aria-checked={theme === 'light'}>
           <span className="toggle-knob">
             {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
           </span>
         </div>
+
+        <div className="language-switcher" aria-label={t('nav.language')} role="group">
+          {languages.map((language) => (
+            <button
+              type="button"
+              className={`language-option ${i18n.resolvedLanguage === language.code || i18n.language === language.code ? 'active' : ''}`}
+              key={language.code}
+              onClick={() => handleLanguageChange(language.code)}
+            >
+              {language.label}
+            </button>
+          ))}
+        </div>
         
-        <Bell size={20} className="header-icon" />
+        <Bell size={20} className="header-icon" aria-label={t('nav.notifications')} />
       </div>
     </header>
   );

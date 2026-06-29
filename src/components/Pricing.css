@@ -58,6 +58,33 @@
   margin-bottom: 1rem;
 }
 
+.room-type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto 1.25rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  border-radius: 999px;
+  color: var(--text-light);
+  background: rgba(229, 9, 20, 0.08);
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.room-type-badge.non-ac {
+  border-color: rgba(201, 168, 76, 0.42);
+  background: rgba(201, 168, 76, 0.1);
+}
+
+.pricing-card:hover .room-type-badge {
+  transform: translateY(-2px);
+  border-color: var(--primary-color);
+  background: rgba(229, 9, 20, 0.16);
+}
+
 .plan-price {
   color: var(--text-main);
   margin-bottom: 2rem;

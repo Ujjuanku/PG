@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "హోమ్",
+    "rooms": "రూమ్స్",
+    "facilities": "సౌకర్యాలు",
+    "pricing": "ధరలు",
+    "contact": "సంప్రదించండి",
+    "language": "భాష",
+    "themeToggle": "డే/నైట్ మోడ్ మార్చండి",
+    "search": "వెతకండి",
+    "notifications": "నోటిఫికేషన్స్"
+  },
+  "rows": {
+    "trending": "ఇప్పుడు ట్రెండింగ్",
+    "premiumRooms": "ప్రీమియం రూమ్స్",
+    "gallery": "గ్యాలరీ & కమ్యూనిటీ",
+    "scrollLeft": "ఎడమకు స్క్రోల్ చేయండి",
+    "scrollRight": "కుడికి స్క్రోల్ చేయండి",
+    "closeImage": "చిత్రాన్ని మూసివేయండి",
+    "expandedView": "పెద్ద వీక్షణ",
+    "imageAlt": "{{title}} చిత్రం {{number}}"
+  },
+  "hero": {
+    "alt": "MR Grand PG",
+    "title": "MR GRAND<br/>MEN'S STAY",
+    "synopsis": "అత్యుత్తమ సౌకర్యాలు, నాణ్యమైన ఆహారం మరియు స్నేహపూర్వక సమాజంతో హైదరాబాద్ హృదయంలో ప్రీమియం జీవనాన్ని అనుభవించండి.",
+    "bookNow": "ఇప్పుడే బుక్ చేయండి",
+    "moreInfo": "మరింత సమాచారం",
+    "rotatingSubtitles": [
+      "Experience premium living in the heart of Hyderabad with premium facilities, quality food and a vibrant community.",
+      "हैदराबाद के दिल में प्रीमियम सुविधाओं, गुणवत्तापूर्ण भोजन और एक जीवंत समुदाय के साथ प्रीमियम जीवन का अनुभव करें।",
+      "అత్యుత్తమ సౌకర్యాలు, నాణ్యమైన ఆహారం మరియు స్నేహపూర్వక సమాజంతో హైదరాబాద్ హృదయంలో ప్రీమియం జీవనాన్ని అనుభవించండి."
+    ]
+  },
+  "about": {
+    "title": "మేమెవరం",
+    "description1": "<strong>MR Grand Men's Stay PG</strong> కు స్వాగతం, Hyderabad హృదయంలో premium living space. Prashanth Hills, Raidurgam లో ఉండి major IT firms కు walkable distance లో ఉన్నాం.",
+    "description2": "మా motto <em>\"Finding Family in Hostel\"</em>. PG అనేది కేవలం room కాకుండా, ఇంటి feeling, safety, community feeling ఇచ్చే place కావాలని మేము నమ్ముతాం.",
+    "amenities": "ప్రీమియం సౌకర్యాలు",
+    "management": "స్నేహపూర్వక మేనేజ్‌మెంట్",
+    "safety": "సేఫ్ & సెక్యూర్",
+    "imageAlt": "PG Building"
+  },
+  "facilities": {
+    "title": "ప్రీమియం సౌకర్యాలు",
+    "acBadge": "AC అందుబాటులో ఉంది",
+    "nonAcBadge": "Non-AC అందుబాటులో ఉంది",
+    "items": [
+      { "title": "హై స్పీడ్ WiFi", "desc": "ప్రతి room కు individual connection" },
+      { "title": "Quality Food", "desc": "రోజూ Egg & Milk, high protein, hygienic" },
+      { "title": "రోజువారీ క్లీనింగ్", "desc": "Rooms ప్రతిరోజూ perfect గా clean చేస్తారు" },
+      { "title": "Cupboards", "desc": "Individual spacious cupboards" },
+      { "title": "మంచి ventilation", "desc": "Fresh air మరియు ample natural light" },
+      { "title": "కొత్త building", "desc": "అన్ని facilities మరియు furniture brand new" },
+      { "title": "Washing Machine", "desc": "Modern machines తో laundry easy" },
+      { "title": "Fridge & Water", "desc": "ప్రతి floor లో refrigerator & dispenser" },
+      { "title": "Prime Location", "desc": "Major IT firms కు walkable distance" },
+      { "title": "Spacious Parking", "desc": "మీ vehicles కోసం ample parking space" },
+      { "title": "AC Rooms Available", "desc": "Extra comfort కోసం premium AC rooms అందుబాటులో ఉన్నాయి" },
+      { "title": "Non-AC Rooms Available", "desc": "Value-focused stays కోసం comfortable Non-AC rooms అందుబాటులో ఉన్నాయి" }
+    ]
+  },
+  "pricing": {
+    "title": "స్పష్టమైన ధరలు",
+    "popular": "అత్యంత ప్రజాదరణ",
+    "perMonth": "/నెల",
+    "bookNow": "ఇప్పుడే బుక్ చేయండి",
+    "plans": ["4 Sharing (AC)", "3 Sharing (Non-AC)", "2 Sharing (AC)", "Single Room (AC)"],
+    "badges": ["AC అందుబాటులో ఉంది", "Non-AC అందుబాటులో ఉంది", "AC అందుబాటులో ఉంది", "AC అందుబాటులో ఉంది"],
+    "features": [
+      "Individual High Speed WiFi",
+      "రోజూ Egg & Milk",
+      "రోజువారీ room cleaning",
+      "అన్ని premium amenities"
+    ]
+  },
+  "reviews": {
+    "title": "మా family ఏమంటోంది",
+    "basedOn": "61 Google Reviews ఆధారంగా",
+    "searchPlaceholder": "Reviews వెతకండి (ఉదా: food, wifi, clean)",
+    "localGuide": "Local Guide",
+    "noMatch": "మీ search కు సరిపడే reviews లేవు.",
+    "items": [
+      "నేను గత 1 సంవత్సరం నుంచి ఈ PG లో ఉంటున్నాను. Area peaceful గా ఉంది, environment friendly గా ఉంది. Owners family లాగా ఉంటారు...",
+      "ఈ hostel లో నాకు amazing experience వచ్చింది. Staff చాలా friendly గా ఉండి ఎప్పుడూ help చేయడానికి ready గా ఉంటారు...",
+      "ఈ PG owners catering services కూడా ఇస్తున్నారు... వాళ్ల food చాలా tasty, price కూడా reasonable.",
+      "Food బాగుంది మరియు 24/7 electricity ఇస్తున్నారు. ముఖ్యంగా vegetables లో palm oil వాడరు.",
+      "ఉండడానికి nice place, good ventilation మరియు proper maintenance. Food really good. Management చాలా good...",
+      "ఈ PG చాలా good మరియు affordable price లో hygienic food ఇస్తారు...",
+      "Nice PG and good food. Rooms ని daily basis లో without fail clean చేస్తారు, చాలా hygienic.",
+      "Hygienic tasty food, employees కి best, friendly management.",
+      "Good place & food. Owners చాలా friendly. IT professionals కు recommend చేస్తాను, ఎందుకంటే IT companies కు చాలా దగ్గర.",
+      "ఉండడానికి good PG. PG owner Mr Srinu Chowdhury good and responsible person. Complaints విని fix చేయిస్తారు.",
+      "Good room, services good. Most important thing food.",
+      "MR Grand PG hostel ఉండడానికి excellent place. Delicious food మరియు comfortable environment ఇస్తుంది..."
+    ]
+  },
+  "location": {
+    "badge": "Hyderabad Prime IT Corridor లో ఉంది",
+    "kicker": "MR Grand PG, Khajaguda X-Roads",
+    "title": "ముఖ్యమైన ప్రతి చోటుకు కొన్ని నిమిషాల దూరం",
+    "subtitle": "Work కు దగ్గరగా ఉండండి, commute stress తగ్గించండి, Hyderabad tech corridor best enjoy చేయండి.",
+    "saved": "1-2 గంటలు",
+    "savedLabel": "రోజూ సమయం ఆదా",
+    "commuteTitle": "Traffic బదులు మీ సమయాన్ని తిరిగి పొందండి.",
+    "commuteCopy": "Mindspace, HITEC City, Financial District, Raidurg Metro కు దగ్గరగా ఉండండి. Weekday commutes చిన్నగా అనిపిస్తాయి, evenings త్వరగా మొదలవుతాయి.",
+    "trust": ["Mindspace దగ్గర", "Hitech City దగ్గర", "Financial District దగ్గర", "Raidurg Metro దగ్గర"],
+    "categories": {
+      "it": { "label": "IT Companies", "eyebrow": "Work closer" },
+      "transport": { "label": "Transport", "eyebrow": "Move faster" },
+      "lifestyle": { "label": "Lifestyle", "eyebrow": "After hours" },
+      "healthcare": { "label": "Healthcare", "eyebrow": "Care nearby" },
+      "spiritual": { "label": "Spiritual Places", "eyebrow": "Quiet moments" }
+    },
+    "note": "*Distances మరియు travel times approximate; traffic conditions పై ఆధారపడి మారవచ్చు.*"
+  },
+  "gettingHere": {
+    "kicker": "MR GRAND Men's Stay PG",
+    "title": "ఇక్కడికి రావడం చాలా సులభం",
+    "subtitle": "Room visit కు వస్తున్నారా? కొన్ని taps లో MR Grand PG చేరుకోండి.",
+    "actions": {
+      "maps": { "label": "Google Maps లో తెరవండి", "description": "నేరుగా MR Grand Men's Stay PG కు navigate చేయండి." },
+      "rapido": { "label": "Rapido బుక్ చేయండి", "description": "Room visit కోసం quick bike taxi తీసుకోండి." },
+      "call": { "label": "Owner కు call చేయండి", "description": "Start అయ్యే ముందు direct గా మాట్లాడండి." },
+      "whatsapp": { "label": "Owner కు WhatsApp చేయండి", "description": "ఈరోజు visit schedule చేయడానికి message చేయండి." }
+    }
+  },
+  "contact": {
+    "title": "సంప్రదించండి",
+    "visit": "మమ్మల్ని సందర్శించండి",
+    "desc": "మీ కొత్త family ని కనుగొనడానికి ready గా ఉన్నారా? Visit చేయండి లేదా మమ్మల్ని contact చేయండి!",
+    "address": "చిరునామా",
+    "phone": "ఫోన్",
+    "email": "ఈమెయిల్",
+    "mapTitle": "MR Grand Men's Stay PG Location",
+    "directions": "Google Maps లో directions పొందండి",
+    "bookVisit": "Visit బుక్ చేయండి",
+    "fullName": "పూర్తి పేరు",
+    "namePlaceholder": "John Doe",
+    "phoneNumber": "ఫోన్ నంబర్",
+    "preferredSharing": "Preferred Sharing",
+    "selectOption": "ఒక option ఎంచుకోండి...",
+    "message": "Message (Optional)",
+    "messagePlaceholder": "ఏమైనా specific requirements?",
+    "sendRequest": "Request పంపండి",
+    "alert": "మీ interest కు ధన్యవాదాలు! మేము త్వరలో contact చేస్తాము."
+  },
+  "floating": {
+    "whatsapp": "WhatsApp చేయండి",
+    "call": "Call చేయండి"
+  }
+}
