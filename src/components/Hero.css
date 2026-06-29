@@ -22,6 +22,7 @@
   height: 100%;
   object-fit: cover;
   animation: slowZoom 20s ease-out infinite alternate;
+  will-change: transform;
 }
 
 .billboard-vignette-bottom {
@@ -63,6 +64,8 @@
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
   color: var(--text-main);
+  overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 .billboard-synopsis {
@@ -103,11 +106,53 @@
 }
 
 @media (max-width: 768px) {
+  .hero-billboard {
+    height: 78vh;
+    min-height: 520px;
+  }
+
   .billboard-content {
     width: 90%;
+    bottom: 16%;
   }
+
+  .billboard-title {
+    font-size: clamp(2.45rem, 12vw, 3.35rem);
+    line-height: 1.04;
+    margin-bottom: 1rem;
+  }
+
+  .billboard-synopsis {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .billboard-actions {
+    gap: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  .billboard-actions .btn {
+    min-height: 44px;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
   .billboard-vignette-left {
     width: 100%;
     background: linear-gradient(to right, rgba(var(--vignette-rgb), 0.9) 0%, rgba(var(--vignette-rgb), 0.7) 100%);
+  }
+}
+
+@media (max-width: 380px) {
+  .billboard-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .billboard-image {
+    animation: none;
+    will-change: auto;
   }
 }

@@ -2,6 +2,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  contain: paint;
   --location-ease: cubic-bezier(0.22, 1, 0.36, 1);
   padding: 6.5rem 4%;
   background:
@@ -497,10 +498,32 @@
 @media (max-width: 760px) {
   .location-advantage {
     padding: 4.25rem 0 4.5rem;
+    background: linear-gradient(180deg, #050505 0%, #0d0b0b 48%, #050505 100%);
+  }
+
+  .location-advantage::before {
+    background-size: 96px 96px;
+    opacity: 0.45;
+  }
+
+  .location-advantage__grid,
+  .location-advantage__beam {
+    display: none;
   }
 
   .location-advantage__inner {
     width: 100%;
+  }
+
+  .corridor-badge,
+  .trust-chip,
+  .location-distance,
+  .location-time,
+  .location-address,
+  .commute-panel,
+  .advantage-card {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .corridor-badge,
@@ -582,6 +605,7 @@
   .advantage-card:nth-child(n + 3) {
     flex: 0 0 min(86vw, 22rem);
     scroll-snap-align: start;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
   .location-row {
@@ -644,5 +668,11 @@
   .location-distance,
   .location-time {
     transition: none;
+  }
+}
+
+@media (max-width: 760px), (prefers-reduced-motion: reduce) {
+  .advantage-card__shine {
+    display: none;
   }
 }

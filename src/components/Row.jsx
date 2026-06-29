@@ -62,6 +62,9 @@ const Row = ({ title, images }) => {
               alt={t('rows.imageAlt', { title, number: index + 1 })}
               onClick={() => openModal(img)}
               loading="lazy"
+              decoding="async"
+              width="280"
+              height="160"
             />
           ))}
         </div>
@@ -89,6 +92,7 @@ const Row = ({ title, images }) => {
               src={selectedImage} 
               alt={t('rows.expandedView')} 
               className="modal-image" 
+              decoding="async"
             />
           </div>
         </div>

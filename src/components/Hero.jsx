@@ -37,6 +37,10 @@ const Hero = () => {
           src="/assets/unnamedq10.jpg" 
           alt={t('hero.alt')} 
           className="billboard-image"
+          width="1360"
+          height="1020"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="billboard-vignette-bottom"></div>
         <div className="billboard-vignette-left"></div>
