@@ -73,8 +73,8 @@
       "Daily Room Cleaning",
       "All Premium Amenities"
     ],
-    "acElectricitySection": "AC rooms are priced as shown above; electricity charges are added on top of the base rent.",
-    "acElectricityNote": "AC room electricity is billed separately based on usage."
+    "acElectricitySection": "AC rooms are priced in the cards below; electricity charges are added on top of the base rent only for AC rooms.",
+    "acElectricityNote": "Electricity charges are added to the base rent only for AC rooms; Non-AC rooms do not have separate AC electricity charges."
   },
   "reviews": {
     "title": "What Our Family Says",
@@ -145,7 +145,7 @@
     "message": "Message (Optional)",
     "messagePlaceholder": "Any specific requirements?",
     "sendRequest": "Send Request",
-    "acElectricityNote": "Choose an AC room only if you want AC; electricity charges are applied separately for AC rooms.",
+    "acElectricityNote": "Electricity charges are added to the base rent only for AC rooms; Non-AC rooms do not have separate AC electricity charges.",
     "alert": "Thank you for your interest! We will contact you soon."
   },
   "floating": {

@@ -74,7 +74,7 @@
       "అన్ని premium amenities"
     ],
     "acElectricitySection": "AC గదుల ధర పైన చూపించబడినట్లేయే ఉంటుంది; విద్యुत్ ఛార్జీలు బేస్ రెంట్‌పై వేరుగా జోడిస్తారు.",
-    "acElectricityNote": "AC గదుల కోసం విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా వస్తుంది."
+    "acElectricityNote": "విద్యుత్ ఛార్జీలు కేవలం AC గదుల కోసం బేస్ రెంట్‌పై వేరుగా జోడించబడతాయి; Non-AC గదులకు ప్రత్యేక AC విద్యుత్ చార్జీలు లేవు."
   },
   "reviews": {
     "title": "మా family ఏమంటోంది",
@@ -145,7 +145,7 @@
     "message": "Message (Optional)",
     "messagePlaceholder": "ఏమైనా specific requirements?",
     "sendRequest": "Request పంపండి",
-    "acElectricityNote": "మీరు AC గది ఎంచుకుంటే విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా ఉంటుంది.",
+    "acElectricityNote": "విద్యుత్ ఛార్జీలు కేవలం AC గదుల కోసం బేస్ రెంట్‌పై వేరుగా జోడించబడతాయి; Non-AC గదులకు ప్రత్యేక AC విద్యుత్ చార్జీలు లేవు.",
     "alert": "మీ interest కు ధన్యవాదాలు! మేము త్వరలో contact చేస్తాము."
   },
   "floating": {
