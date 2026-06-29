@@ -72,7 +72,9 @@
       "రోజూ Egg & Milk",
       "రోజువారీ room cleaning",
       "అన్ని premium amenities"
-    ]
+    ],
+    "acElectricityNote": "AC గదుల కోసం విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా వస్తుంది.",
+    "nonAcElectricityNote": "Non-AC గదులకు అదనపు AC విద్యుత్ చార్జీలు వర్తించవు."
   },
   "reviews": {
     "title": "మా family ఏమంటోంది",
@@ -143,6 +145,7 @@
     "message": "Message (Optional)",
     "messagePlaceholder": "ఏమైనా specific requirements?",
     "sendRequest": "Request పంపండి",
+    "acElectricityNote": "మీరు AC గది ఎంచుకుంటే విద్యుత్ బిల్లు వాడుక ఆధారంగా వేరుగా ఉంటుంది.",
     "alert": "మీ interest కు ధన్యవాదాలు! మేము త్వరలో contact చేస్తాము."
   },
   "floating": {

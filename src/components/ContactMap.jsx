@@ -87,6 +87,7 @@ const ContactMap = () => {
                   <option value="3">{t('pricing.plans.1')}</option>
                   <option value="4">{t('pricing.plans.0')}</option>
                 </select>
+                <p className="form-caption">{t('contact.acElectricityNote')}</p>
               </div>
               <div className="form-group">
                 <label htmlFor="message">{t('contact.message')}</label>

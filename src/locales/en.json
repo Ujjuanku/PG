@@ -72,7 +72,9 @@
       "Everyday Egg & Milk",
       "Daily Room Cleaning",
       "All Premium Amenities"
-    ]
+    ],
+    "acElectricityNote": "AC room electricity is billed separately based on usage.",
+    "nonAcElectricityNote": "Non-AC rooms do not incur extra AC electricity charges."
   },
   "reviews": {
     "title": "What Our Family Says",
@@ -143,6 +145,7 @@
     "message": "Message (Optional)",
     "messagePlaceholder": "Any specific requirements?",
     "sendRequest": "Send Request",
+    "acElectricityNote": "Choose an AC room only if you want AC; electricity charges are applied separately for AC rooms.",
     "alert": "Thank you for your interest! We will contact you soon."
   },
   "floating": {

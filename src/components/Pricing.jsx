@@ -3,16 +3,15 @@ import { Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const pricingData = [
-  { price: '9,500', popular: false },
-  { price: '10,500', popular: true },
-  { price: '13,500', popular: false },
-  { price: '24,000', popular: false }
+  { price: '9,500', popular: false, isAc: true },
+  { price: '10,500', popular: true, isAc: false },
+  { price: '13,500', popular: false, isAc: true },
+  { price: '24,000', popular: false, isAc: true }
 ];
 
 const Pricing = () => {
   const { t } = useTranslation();
   const plans = t('pricing.plans', { returnObjects: true });
-  const badges = t('pricing.badges', { returnObjects: true });
   const features = t('pricing.features', { returnObjects: true });
 
   return (
@@ -25,9 +24,6 @@ const Pricing = () => {
             <div className={`pricing-card ${plan.popular ? 'popular' : ''}`} key={index}>
               {plan.popular && <div className="popular-badge">{t('pricing.popular')}</div>}
               <h3 className="plan-type">{plans[index]}</h3>
-              <span className={`room-type-badge ${badges[index]?.includes('Non') ? 'non-ac' : 'ac'}`}>
-                {badges[index]}
-              </span>
               <div className="plan-price">
                 <span className="currency">₹</span>
                 <span className="amount">{plan.price}</span>
@@ -38,6 +34,9 @@ const Pricing = () => {
                   <li key={feature}><Check size={18} className="check-icon" /> {feature}</li>
                 ))}
               </ul>
+              <p className="pricing-note">
+                {t(plan.isAc ? 'pricing.acElectricityNote' : 'pricing.nonAcElectricityNote')}
+              </p>
               <a href="#book-visit" className={`btn ${plan.popular ? 'btn-accent' : 'btn-outline-primary'}`}>
                 {t('pricing.bookNow')}
               </a>
